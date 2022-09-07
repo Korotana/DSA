@@ -1,3 +1,5 @@
+# https://mycode.prepbytes.com/problems/fundamentals/MAXDRAWS
+
 testcases = [input() for i in range(int(input()))]
 
 def check_socks_draws(pairs):

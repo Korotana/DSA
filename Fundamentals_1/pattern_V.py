@@ -1,3 +1,5 @@
+# https://mycode.prepbytes.com/problems/fundamentals/PATTERN3
+
 Char = input()
 
 def print_V():
