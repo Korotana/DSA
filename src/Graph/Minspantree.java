@@ -1,4 +1,4 @@
-package Kattis;
+package Graph;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
