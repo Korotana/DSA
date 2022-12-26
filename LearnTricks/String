@@ -1,0 +1,2 @@
+Split string into list of characters:
+string=[*string]
