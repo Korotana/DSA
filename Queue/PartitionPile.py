@@ -33,5 +33,5 @@ def partition_pile(starting_stack_size, max_stable_height, partition):
         queue_size = len(queue)
     return partitioned
 
-Test Case partition_pile(13,3,2)
-	Output: [3, 3, 3, 2, 2]
+# Test Case partition_pile(13,3,2)
+# 	Output: [3, 3, 3, 2, 2]
