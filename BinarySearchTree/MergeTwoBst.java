@@ -146,22 +146,6 @@ class Solution
         return li3;
     }
 
-    // public Node tre(List<Integer> list,int strt,int end){
-
-    //     if (strt > end){
-    //         return null;
-    //     }
-
-    //     int mid = (strt+end)/2;
-    //     Node node = new Node(list.get(mid));
-
-    //     node.left = tre(list, strt, mid-1);
-    //     node.right = tre(list,mid+1,end);
-
-    //     return node;
-
-    // }
-
     //Function to return a list of integers denoting the node
     //values of both the BST in a sorted order.
     public List<Integer> merge(Node root1,Node root2)
@@ -177,7 +161,5 @@ class Solution
         return mrg(list1,list2);
         // Node node = tre(list3,0,list3.size());
 
-
-        // Write your code here
     }
 }
