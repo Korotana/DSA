@@ -9,10 +9,8 @@ else
 y++;
 }
 
-// If till now both x,y are greater
-// than 1 means array is not sorted.
-// If both any of x,y is zero means
-// array is not rotated.
+// If till now both x,y are greater than 1 means array is not sorted.
+// If both any of x,y is zero means array is not rotated.
 if (y == 1) {
 // Checking for last element with first.
 if (arr[n - 1] < arr[0])
