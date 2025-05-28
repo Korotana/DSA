@@ -1,9 +1,4 @@
-# Node for linked list:
-
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+from Node import Node
 
 
 class Solution:
@@ -15,7 +10,6 @@ class Solution:
         carry = 0
         result_head = None
 
-        reverse_result_list = []
         while reverse_num1 or reverse_num2 or carry:
             value1 = reverse_num1.data if reverse_num1 else 0
             value2 = reverse_num2.data if reverse_num2 else 0
