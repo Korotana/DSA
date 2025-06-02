@@ -10,3 +10,11 @@ def create_linked_list(values):
     return head
 
 
+# Function to convert linked list back to list (for output checking)
+def To_list(head):
+    res = []
+    while head:
+        res.append(head.data)
+        head = head.next
+    return res
+
