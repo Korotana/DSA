@@ -1,6 +1,13 @@
 from Node import Node
 
 def create_linked_list(values):
+    """
+       Build a linked list from a Python list.
+       Returns None when `values` is empty.
+    """
+    if not values:  # ← guard for the empty-list case
+        return None
+
     head = Node(values[0])
     current = head
 
