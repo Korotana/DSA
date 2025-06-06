@@ -1,9 +1,4 @@
-'''
-class Node:
-    def _init_(self,x):
-        self.data = x
-        self.next = None
-'''
+from LinkedList.Node import Node
 
 
 class Solution:
@@ -40,3 +35,5 @@ class Solution:
             arr = merged_level
 
         return arr[0]
+
+print(4%5)
