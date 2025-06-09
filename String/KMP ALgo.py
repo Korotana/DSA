@@ -34,3 +34,4 @@ def search(self, pat, txt):
             else:
                 i += 1
     return res
+
