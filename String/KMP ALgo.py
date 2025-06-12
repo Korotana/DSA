@@ -35,3 +35,7 @@ def search(self, pat, txt):
                 i += 1
     return res
 
+
+# [0, 1, 2, 2 , 1, 1]
+# output = 1
+
