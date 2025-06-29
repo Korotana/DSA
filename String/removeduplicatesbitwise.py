@@ -3,16 +3,6 @@ def removeDuplicates(s):
     bit_lower_case = 0
     result = []
 
-
-    for char in s:
-        oc = ord(char)
-        if 65 <= oc <= 90:  # 'A' to 'Z'
-            bit = 1 << (oc - 65)
-            if not (bit_upper & bit):
-                bit_upper |= bit
-                result.append(char)
-
-
     for char in s:
         oc = ord(char)
         if 65 <= oc <= 90:  # if 'A' <= char <= 'Z':
