@@ -1,0 +1,53 @@
+FUNCTION multiplyStrings(s1, s2):
+    SET negative = false
+
+    // Step 1: Handle negative signs
+    IF s1 starts with '-':
+        REMOVE the '-' from s1
+        TOGGLE negative
+
+    IF s2 starts with '-':
+        REMOVE the '-' from s2
+        TOGGLE negative
+
+    // Step 2: Remove leading zeros (like "00023" → "23")
+    REMOVE leading zeros from s1
+    IF s1 is empty → SET s1 = "0"
+    
+    REMOVE leading zeros from s2
+    IF s2 is empty → SET s2 = "0"
+
+    // Step 3: If any number is zero, return "0"
+    IF s1 == "0" OR s2 == "0":
+        RETURN "0"
+
+    // Step 4: Initialize result array of size (len(s1) + len(s2))
+    CREATE result array filled with 0s of length (len(s1) + len(s2))
+
+    // Step 5: Multiply each digit in reverse order
+    FOR i from last digit to first in s1:
+        FOR j from last digit to first in s2:
+            digit1 = numeric value of s1[i]
+            digit2 = numeric value of s2[j]
+            product = digit1 * digit2
+
+            // Find positions to add the product in result array
+            position1 = i + j
+            position2 = i + j + 1
+
+            // Add product to the position, handling carry
+            total = product + result[position2]
+            result[position2] = total MOD 10
+            result[position1] += total DIV 10
+
+    // Step 6: Convert result array to string (skip leading zeros)
+    CREATE empty string builder
+    FOR each digit in result:
+        SKIP leading zeros until first non-zero digit
+        ADD digit to string
+
+    // Step 7: Add negative sign if needed
+    IF negative is true:
+        PREPEND '-' to result string
+
+    RETURN result string
